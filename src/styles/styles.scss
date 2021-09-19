@@ -1,0 +1,138 @@
+// https://coolors.co/af9164-f7f3e3-b3b6b7-454851-2b2118
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 2px;
+}
+nav{
+background-color: #2B2118;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 50px;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+img{
+    width: 50px;
+}
+ul{
+    display: flex;
+    
+    li{
+        list-style: none;
+        padding: 0 30px;
+        a{
+            color: #F7F3E3;
+            text-decoration: none;
+            margin: auto 0;
+        }
+    }
+}
+}
+
+.homePage{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    .leftBox{
+        background: linear-gradient(to top, #E3D9C9, #F7F3E3);
+        width: 40vw;
+        height: 100vh;
+        position: relative;
+        .introCard{
+            width: 25vw;
+            height: 75vh;
+            background: #F7F3E3;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            position: absolute;
+            top: 100px;
+            left: 300px;
+            text-align: center;
+            padding: 30px 0;
+            color: #9C6615;
+            img{
+                width: 200px;
+                border-radius: 50%;
+                margin: 30px 0;
+            }
+            h1,h3{
+                letter-spacing: 5px;
+                font-weight: 400;
+            }
+            p{
+                border-bottom: 3px solid #DF7373;
+                width: 50px;
+                margin: 20px auto;
+            }
+            .icon{
+                margin: 20px auto;
+                
+                .github,.linkedin{
+                    fill: #2B2118;
+                    font-size: 25px;
+                    margin: 10px;
+                }
+            }
+            
+        }
+    }
+    .rightBox{
+        width: 50vw;
+        padding: 150px 50px;
+        color: #2B2118;
+        position: relative;
+        h2{
+            margin-bottom: 15px;
+            font-weight: 100;
+            font-size: 100px;
+        }
+        h3{
+            margin-bottom: 15px;
+            font-weight: 100;
+            font-size: 30px;
+        }
+        p{
+            width: fit-content;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #DF7373;
+            padding-right: 15px;
+            padding-left: -10px;
+        }
+        img{
+            position: absolute;
+            z-index: -1;
+            transform:rotate(180deg);
+            bottom: 0;
+            right: 0;
+            width: 900px;
+            height: 150px;
+        }
+    }
+}
+
+.portfolio{
+    height: 100vh;
+    background: linear-gradient(to bottom, #E3D9C9, #F7F3E3);
+    h1{
+        font-weight: 100;
+        text-align: center;
+    }
+    .project{
+        width:60vw;
+        height: 60vh;
+        background: #F7F3E3;
+        margin: 50px auto;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        display: flex;
+        &:hover{
+            
+        }
+        img{
+            width: 75%;
+            height: 60vh;
+            object-fit: cover;
+        }
+    }
+}

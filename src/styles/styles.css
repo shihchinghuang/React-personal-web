@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  letter-spacing: 2px;
+}
+
+nav {
+  background-color: #2B2118;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 50px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+nav img {
+  width: 50px;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 0 30px;
+}
+
+nav ul li a {
+  color: #F7F3E3;
+  text-decoration: none;
+  margin: auto 0;
+}
+
+.homePage {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.homePage .leftBox {
+  background: -webkit-gradient(linear, left bottom, left top, from(#E3D9C9), to(#F7F3E3));
+  background: linear-gradient(to top, #E3D9C9, #F7F3E3);
+  width: 40vw;
+  height: 100vh;
+  position: relative;
+}
+
+.homePage .leftBox .introCard {
+  width: 25vw;
+  height: 75vh;
+  background: #F7F3E3;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: absolute;
+  top: 100px;
+  left: 300px;
+  text-align: center;
+  padding: 30px 0;
+  color: #9C6615;
+}
+
+.homePage .leftBox .introCard img {
+  width: 200px;
+  border-radius: 50%;
+  margin: 30px 0;
+}
+
+.homePage .leftBox .introCard h1, .homePage .leftBox .introCard h3 {
+  letter-spacing: 5px;
+  font-weight: 400;
+}
+
+.homePage .leftBox .introCard p {
+  border-bottom: 3px solid #DF7373;
+  width: 50px;
+  margin: 20px auto;
+}
+
+.homePage .leftBox .introCard .icon {
+  margin: 20px auto;
+}
+
+.homePage .leftBox .introCard .icon .github, .homePage .leftBox .introCard .icon .linkedin {
+  fill: #2B2118;
+  font-size: 25px;
+  margin: 10px;
+}
+
+.homePage .rightBox {
+  width: 50vw;
+  padding: 150px 50px;
+  color: #2B2118;
+  position: relative;
+}
+
+.homePage .rightBox h2 {
+  margin-bottom: 15px;
+  font-weight: 100;
+  font-size: 100px;
+}
+
+.homePage .rightBox h3 {
+  margin-bottom: 15px;
+  font-weight: 100;
+  font-size: 30px;
+}
+
+.homePage .rightBox p {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #DF7373;
+  padding-right: 15px;
+  padding-left: -10px;
+}
+
+.homePage .rightBox img {
+  position: absolute;
+  z-index: -1;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  bottom: 0;
+  right: 0;
+  width: 900px;
+  height: 150px;
+}
+
+.portfolio {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#E3D9C9), to(#F7F3E3));
+  background: linear-gradient(to bottom, #E3D9C9, #F7F3E3);
+}
+
+.portfolio h1 {
+  font-weight: 100;
+  text-align: center;
+}
+
+.portfolio .project {
+  width: 60vw;
+  height: 60vh;
+  background: #F7F3E3;
+  margin: 50px auto;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.portfolio .project img {
+  width: 75%;
+  height: 60vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=styles.css.map */
