@@ -267,19 +267,52 @@ nav ul li a {
   padding-bottom: 50px;
 }
 
+.resume .section h3 {
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
 .resume .section .about {
   margin: 50px 0;
   font-weight: 200;
 }
 
-.resume .section .experience .iii {
+.resume .section .experience .box {
   width: 800px;
-  height: 300px;
   border-radius: 5px;
-  background-color: white;
-  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background: #F7F3E3;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin: auto;
+  margin-bottom: 50px;
+  padding: 50px 80px;
+  font-weight: 300;
+}
+
+.resume .section .experience .box .title {
+  font-weight: 400;
+  border-bottom: #DF7373 1px solid;
+  padding-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.resume .section .experience .box .content p {
+  margin: 15px 0;
+}
+
+.resume .section .experience .box .content a {
+  color: #AF9164;
+  text-decoration: none;
+}
+
+.resume .section .experience .box .content a:hover {
+  color: #DF7373;
 }
 
 .contact {
@@ -287,5 +320,14 @@ nav ul li a {
   background: -webkit-gradient(linear, left top, left bottom, from(#F7F3E3), to(#B3B6B7));
   background: linear-gradient(to bottom, #F7F3E3, #B3B6B7);
   padding-top: 60px;
+}
+
+.contact h1 {
+  padding: 10px 0;
+  font-weight: 100;
+  text-align: center;
+  color: #454851;
+  margin: auto;
+  background: url(../img/titlebg.svg) center/15% no-repeat border-box;
 }
 /*# sourceMappingURL=styles.css.map */

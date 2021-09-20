@@ -18,9 +18,9 @@ const Nav = () => {
         <li>
           <a href="#contact">contact</a>
         </li>
-        <li>
+        {/* <li>
           <a href="/">English Version</a>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

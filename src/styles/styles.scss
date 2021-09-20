@@ -219,18 +219,46 @@ nav{
         width: 1000px;
         margin: auto;
         padding-bottom: 50px;
+        h3{
+            text-align: center;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
         .about{
             margin: 50px 0;
             font-weight: 200;
         }
         .experience{
-            .iii{
+            
+            .box{
                 width: 800px;
-                height: 300px;
+                // height: 300px;
                 border-radius: 5px;
-                background-color: white;
-                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                background: $wheat;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                 margin: auto;
+                margin-bottom: 50px;
+                padding: 50px 80px;
+                font-weight: 300;
+                .title{
+                    font-weight: 400;
+                    border-bottom: $coral 1px solid;
+                    padding-bottom: 5px;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .content{
+                    p{
+                        margin: 15px 0;
+                    }
+                    a{
+                        color: $lightBrown;
+                        text-decoration: none;
+                        &:hover{
+                            color: $coral;
+                        }
+                    }
+                }
             }
         }
         
@@ -242,5 +270,12 @@ nav{
     background: linear-gradient(to bottom, #F7F3E3, #B3B6B7);
     padding-top: 60px;
 
-
+    h1{
+        padding: 10px 0;
+        font-weight: 100;
+        text-align: center;
+        color: $darkGrey;
+        margin: auto;
+        background: url(../img/titlebg.svg) center/15% no-repeat border-box;
+    }
 }
