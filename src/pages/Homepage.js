@@ -6,7 +6,7 @@ import waves from '../img/waves.svg';
 
 const Homepage = () => {
   return (
-    <div className="homePage">
+    <div className="homePage" id="homepage">
       <div className="leftBox">
         <div className="introCard">
           <img src={ProfilePic} alt="" />

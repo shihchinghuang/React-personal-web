@@ -1,34 +1,48 @@
 // https://coolors.co/af9164-f7f3e3-b3b6b7-454851-2b2118
+$darkBrown: #2B2118;
+$lightBrown: #AF9164;
+$darkGrey: #454851;
+$lightGrey: #B3B6B7;
+$wheat: #F7F3E3;
+$coral: #DF7373;
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     letter-spacing: 2px;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
-nav{
-background-color: #2B2118;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 10px 50px;
-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
-img{
-    width: 50px;
-}
-ul{
+nav{
+    width: 100%;
+    height: 60px;
+    z-index: 1;
+    background-color: $darkBrown;
     display: flex;
-    
-    li{
-        list-style: none;
-        padding: 0 30px;
-        a{
-            color: #F7F3E3;
-            text-decoration: none;
-            margin: auto 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 30px 5px;
+    position: fixed;
+        img{
+            width: 50px;
         }
-    }
-}
+        ul{
+            display: flex;
+            
+            li{
+                list-style: none;
+                padding: 0 30px;
+                a{
+                    color: $wheat;
+                    text-decoration: none;
+                    margin: auto 0;
+                }
+            }
+        }
 }
 
 .homePage{
@@ -43,14 +57,14 @@ ul{
         .introCard{
             width: 25vw;
             height: 75vh;
-            background: #F7F3E3;
+            background: $wheat;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             position: absolute;
-            top: 100px;
+            top: 130px;
             left: 300px;
             text-align: center;
             padding: 30px 0;
-            color: #9C6615;
+            color: $lightBrown;
             img{
                 width: 200px;
                 border-radius: 50%;
@@ -61,7 +75,7 @@ ul{
                 font-weight: 400;
             }
             p{
-                border-bottom: 3px solid #DF7373;
+                border-bottom: 3px solid $coral;
                 width: 50px;
                 margin: 20px auto;
             }
@@ -69,7 +83,7 @@ ul{
                 margin: 20px auto;
                 
                 .github,.linkedin{
-                    fill: #2B2118;
+                    fill: $darkBrown;
                     font-size: 25px;
                     margin: 10px;
                 }
@@ -80,7 +94,7 @@ ul{
     .rightBox{
         width: 50vw;
         padding: 150px 50px;
-        color: #2B2118;
+        color: $darkBrown;
         position: relative;
         h2{
             margin-bottom: 15px;
@@ -96,7 +110,7 @@ ul{
             width: fit-content;
             padding-bottom: 10px;
             margin-bottom: 10px;
-            border-bottom: 3px solid #DF7373;
+            border-bottom: 3px solid $coral;
             padding-right: 15px;
             padding-left: -10px;
         }
@@ -113,26 +127,120 @@ ul{
 }
 
 .portfolio{
-    height: 100vh;
+    width: 100%;
+    height: 180vh;
+    padding-top: 100px;
     background: linear-gradient(to bottom, #E3D9C9, #F7F3E3);
     h1{
+        padding: 10px 0;
         font-weight: 100;
         text-align: center;
+        color: $darkGrey;
+        margin: auto;
+        background: url(../img/titlebg.svg) center/15% no-repeat border-box;
     }
-    .project{
-        width:60vw;
-        height: 60vh;
-        background: #F7F3E3;
-        margin: 50px auto;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    .projects{
+        width: 1000px;
+        height: 500px;
         display: flex;
-        &:hover{
+        margin: auto;
+        flex-wrap: wrap;
+        
+        .project{
+            width:45%;
+            height: 45%;
+            background: $wheat;
+            margin: 50px auto;
+            display: flex;
+            position: relative;
+
+            &:hover img{
+               opacity: .5;
+            }
+
+            &:hover .info{
+                opacity: 1;
+            }
             
-        }
-        img{
-            width: 75%;
-            height: 60vh;
-            object-fit: cover;
+            img{
+                width: 100%;
+                object-fit: cover;
+                transition: .5s ease all;
+            }
+            .info{
+                width: 300px;
+                height: 150px;
+                position: absolute;
+                left: 75px;
+                top: calc(112.5px - 75px);
+                opacity: 0;
+                border-radius: 5px;
+                background-color: $lightBrown;
+                transition: .1s ease all;
+                box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+                color: $wheat;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                padding: 30px 0;
+                a{
+                    background-color: $wheat;
+                    color: $lightBrown;
+                    text-align: center;
+                    text-decoration: none;
+                    border: none;
+                    width: 150px;
+                    margin: auto;
+                    margin-top: 10px;
+                    padding: 5px 0;
+                    border-radius: 5px;
+                }
+            }
         }
     }
+    
+}
+
+.resume{
+    // height: 100vh;
+    background-color: $wheat;
+    padding-top: 100px;
+    
+    h1{
+        padding: 10px 0;
+        font-weight: 100;
+        text-align: center;
+        color: $darkGrey;
+        margin: auto;
+        background: url(../img/titlebg.svg) center/15% no-repeat border-box;
+    }
+    .section{
+        width: 1000px;
+        margin: auto;
+        padding-bottom: 50px;
+        .about{
+            margin: 50px 0;
+            font-weight: 200;
+        }
+        .experience{
+            .iii{
+                width: 800px;
+                height: 300px;
+                border-radius: 5px;
+                background-color: white;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                margin: auto;
+            }
+        }
+        
+    }
+}
+
+.contact{
+    height: calc(100vh - 60px);
+    background: linear-gradient(to bottom, #F7F3E3, #B3B6B7);
+    padding-top: 60px;
+
+
 }
