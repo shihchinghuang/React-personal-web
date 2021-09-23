@@ -1,5 +1,4 @@
 import React from 'react';
-import resumebg from '../img/resumebg.svg';
 
 const Resume = () => {
   return (
