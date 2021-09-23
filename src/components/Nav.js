@@ -7,16 +7,16 @@ const Nav = () => {
       <img src={Logo} alt="" />
       <ul>
         <li>
-          <a href="#homepage">about me</a>
+          <a href="#homepage">ABOUT</a>
         </li>
         <li>
-          <a href="#resume">resume</a>
+          <a href="#portfolio">PORTFOLIO</a>
         </li>
         <li>
-          <a href="#portfolio">portfolio</a>
+          <a href="#resume">RESUME</a>
         </li>
         <li>
-          <a href="#contact">contact</a>
+          <a href="#contact">CONTACT</a>
         </li>
         {/* <li>
           <a href="/">English Version</a>

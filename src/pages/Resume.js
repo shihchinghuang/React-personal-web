@@ -1,10 +1,11 @@
 import React from 'react';
+import resumebg from '../img/resumebg.svg';
 
 const Resume = () => {
   return (
     <div className="resume" id="resume">
       <h1>Resume</h1>
-      <div className="section">
+      <div className="section" data-aos="fade-up">
         <div className="about">
           <p>
             •

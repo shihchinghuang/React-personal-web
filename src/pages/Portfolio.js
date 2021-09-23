@@ -12,7 +12,7 @@ const Portfolio = () => {
       <div className="portfolio" id="portfolio">
         <h1>Portfolio</h1>
 
-        <div className="projects">
+        <div className="projects" data-aos="fade-up">
           <div className="project">
             <img src={reactapi} alt="" />
             <div className="info">
