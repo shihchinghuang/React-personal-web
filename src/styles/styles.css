@@ -511,7 +511,7 @@ nav.active .hamburger span:last-child {
 }
 
 .resume .section .experience .content {
-  display: block;
+  display: none;
 }
 
 .resume .section .experience .content p {

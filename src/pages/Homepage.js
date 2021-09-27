@@ -16,16 +16,6 @@ const Homepage = () => {
             <p></p>
             <h3>前端工程師</h3>
             <ContactIcons />
-
-            {/* <div className="icon"> */}
-            {/* <ContactIcons /> */}
-            {/* <a href="https://github.com/shihchinghuang?tab=repositories">
-                <AiFillGithub className="github" />
-              </a>
-              <a href="https://www.linkedin.com/in/shihching-huang-4680a68b/">
-                <AiFillLinkedin className="linkedin" />
-              </a> */}
-            {/* </div> */}
           </div>
         </div>
       </div>
@@ -37,7 +27,7 @@ const Homepage = () => {
             一起成為同事吧～
           </h3>
           <p>喜歡嘗試不同領域的新事物，迎接挑戰，享受把事情搞懂的過程</p>
-          <p>熟悉 HTML/CSS/JavaScript/React/GitHub</p>
+          <p>熟悉 HTML / CSS / JavaScript / React / GitHub</p>
           <p>多益 915 分金色證書</p>
         </div>
       </div>

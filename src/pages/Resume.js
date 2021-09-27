@@ -35,11 +35,11 @@ const Resume = () => {
               <p>資策會　前端工程師就業養成班</p>
               <p>2021.02 - 2021.07</p>
             </div>
-            {/* <ResumeSeeMore
+            <ResumeSeeMore
               content={content}
               setContent={setContent}
               showContent={showContent}
-            /> */}
+            />
             <div className={'content ' + (content && 'active')}>
               <p>
                 與五名組員協作期末專題，主題為女性生理用品電商網站 Lunar
@@ -63,11 +63,11 @@ const Resume = () => {
               <p>立法院時代力量黨團　教育及文化法案助理</p>
               <p>2018.08 - 2021.02</p>
             </div>
-            {/* <ResumeSeeMore
+            <ResumeSeeMore
               content={content}
               setContent={setContent}
               showContent={showContent}
-            /> */}
+            />
             <div className={'content ' + (content && 'active')}>
               <p>
                 •
