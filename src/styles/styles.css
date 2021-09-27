@@ -438,6 +438,8 @@ nav.active .hamburger span:last-child {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .resume .section .experience .box .content p {
@@ -551,17 +553,45 @@ nav.active .hamburger span:last-child {
     min-width: 1000px;
     margin-top: 80px;
   }
+  .homePage .leftBox {
+    margin-right: 0;
+  }
   .homePage .leftBox .introCard {
-    width: 300px;
+    width: 500px;
+  }
+  .homePage .leftBox .introCard h1 {
+    font-size: 60px;
+    font-weight: 200;
+  }
+  .homePage .leftBox .introCard h3 {
+    font-size: 30px;
+    font-weight: 200;
+  }
+  .homePage .leftBox .introCard .icon .github, .homePage .leftBox .introCard .icon .linkedin {
+    font-size: 40px;
   }
   .homePage .leftBox .introCard img {
     width: 150px;
   }
   .homePage .rightBox {
-    margin-top: 140px;
+    margin-top: 50px;
+  }
+  .homePage .rightBox h2 {
+    text-align: center;
+  }
+  .homePage .rightBox h3 {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .homePage .rightBox p {
+    font-size: 28px;
+    margin-top: 10px;
   }
   .portfolio {
     min-width: 1000px;
+  }
+  .portfolio h1 {
+    font-size: 48px;
   }
   .portfolio .projects {
     width: 800px;
@@ -569,6 +599,7 @@ nav.active .hamburger span:last-child {
     overflow: visible;
   }
   .portfolio .projects .project {
+    width: 80%;
     background-color: transparent;
   }
   .portfolio .projects .project .info {
@@ -584,10 +615,15 @@ nav.active .hamburger span:last-child {
             flex-direction: row;
     padding: 10px 0;
     margin-top: 10px;
+    background-color: transparent;
   }
   .portfolio .projects .project .info a {
+    width: auto;
     margin: 0;
-    padding: 0;
+    padding: 10px;
+    font-size: 30px;
+    background-color: #454851;
+    color: #F7F3E3;
   }
   .portfolio .projects .project .info .title {
     display: none;
@@ -595,21 +631,30 @@ nav.active .hamburger span:last-child {
   .portfolio .projects .project .title-mobile {
     display: block;
     margin: auto;
+    font-size: 30px;
+    font-weight: 200;
   }
   .resume {
     min-width: 1000px;
     height: auto;
   }
+  .resume h1 {
+    font-size: 48px;
+  }
   .resume .section {
     width: 800px;
     height: auto;
     overflow: visible;
+    font-size: 24px;
   }
   .resume .section .experience .box {
     width: 700px;
   }
   .contact {
     min-width: 1000px;
+  }
+  .contact h1 {
+    font-size: 48px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
