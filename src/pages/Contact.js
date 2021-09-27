@@ -42,6 +42,7 @@ const Contact = () => {
             <AiOutlineMail className="infoicon" />
           </CopyToClipboard>
           <p>{instruction}</p>
+          <h1>sunnyhuang.sc@gmail.com</h1>
         </div>
 
         <div data-aos="fade-up" data-aos-delay="150">

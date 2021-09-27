@@ -14,6 +14,8 @@ $coral: #DF7373;
     letter-spacing: 2px;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 body{
     background-color: $wheat;
@@ -387,6 +389,7 @@ nav{
         display: flex;
         flex-direction: row;
         justify-content: center;
+        flex-wrap: wrap;
         a{
             &:hover .infoicon{
                 transform: scale(1.5);
@@ -396,7 +399,6 @@ nav{
             width: 50px;
             height: 50px;
             fill: $darkBrown;
-            font-size: 30px;
             margin: 30px;
             border-bottom: 5px solid $lightBrown;
             padding-bottom: 10px;
@@ -404,6 +406,9 @@ nav{
         .email{
             height: fit-content;
             position: relative;
+            h1{
+                display: none;
+            }
             .infoicon{
                 cursor: pointer;
             }
@@ -536,9 +541,15 @@ nav{
             height: auto;
             overflow: visible;
             font-size: 24px;
+            // font-weight: 200;
             .experience{
                 .box{
                     width: 700px;
+                    .content{
+                        p{
+                            font-weight: 200;
+                        }
+                    }
                 }
             }
         }
@@ -547,6 +558,32 @@ nav{
         min-width: 1000px;
         h1{
             font-size: 48px;
+        }
+        p{
+            font-size: 40px;
+            font-weight: 200;
+            margin-bottom: 30px;
+        }
+        .info{
+            .infoicon{
+                width: 80px;
+                height: 80px;
+            }
+            .email{
+                display: flex;
+                align-items: center;
+                width: 100%;
+                justify-content: center;
+                h1{
+                    display: block;
+                    background: transparent;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        }
+        img{
+            margin-top: 60px;
         }
     }
 
