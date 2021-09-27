@@ -569,10 +569,12 @@ nav.active .hamburger span:last-child {
   .homePage .leftBox .introCard h1 {
     font-size: 60px;
     font-weight: 200;
+    color: #2B2118;
   }
   .homePage .leftBox .introCard h3 {
     font-size: 30px;
-    font-weight: 200;
+    font-weight: 400;
+    color: #2B2118;
   }
   .homePage .leftBox .introCard .icon .github, .homePage .leftBox .introCard .icon .linkedin {
     font-size: 40px;
@@ -585,6 +587,7 @@ nav.active .hamburger span:last-child {
   }
   .homePage .rightBox h2 {
     text-align: center;
+    color: #AF9164;
   }
   .homePage .rightBox h3 {
     margin-bottom: 30px;
