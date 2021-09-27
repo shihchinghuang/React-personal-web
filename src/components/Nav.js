@@ -22,21 +22,22 @@ const Nav = () => {
           setHambugerOpen={setHambugerOpen}
           showMenu={showMenu}
         />
+        <ul className="topmenu">
+          <li>
+            <a href="#homepage">ABOUT</a>
+          </li>
+          <li>
+            <a href="#portfolio">PORTFOLIO</a>
+          </li>
+          <li>
+            <a href="#resume">RESUME</a>
+          </li>
+          <li>
+            <a href="#contact">CONTACT</a>
+          </li>
+        </ul>
       </nav>
-      {/* <ul className="topmenu">
-        <li>
-          <a href="#homepage">ABOUT</a>
-        </li>
-        <li>
-          <a href="#portfolio">PORTFOLIO</a>
-        </li>
-        <li>
-          <a href="#resume">RESUME</a>
-        </li>
-        <li>
-          <a href="#contact">CONTACT</a>
-        </li>{' '}
-      </ul> */}
+
       <div className="sidemenuclass">
         <Sidemenu
           hambugerOpen={hambugerOpen}

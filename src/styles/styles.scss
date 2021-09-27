@@ -40,7 +40,7 @@ nav{
         .hamburger{
             width: 50px;
             height: 50px;
-            display: flex;
+            display: none;
             flex-direction: column;
             justify-content: space-evenly;
             cursor: pointer;
@@ -76,7 +76,7 @@ nav{
 }
 .topmenu{
     display: flex;
-    
+    z-index: 5;
     li{
         list-style: none;
         padding: 0 30px;
@@ -102,7 +102,7 @@ nav{
 }
 .sidemenuclass{
     position: relative;
-
+    display: none;
     .sidemenu{
         display: flex;
         flex-direction: column;
@@ -250,7 +250,7 @@ nav{
             margin: 50px auto;
             display: flex;
             position: relative;
-
+            flex-wrap: wrap;
             &:hover img{
                opacity: .5;
             }
@@ -419,11 +419,47 @@ nav{
     }
 }
 
-@media screen and (max-width:768px) { 
-    body{
-        width: 100%;
+@media screen and (max-width:1000px) {
+    .homePage{
+        min-width: 1000px;
+        .leftBox{
+            // margin-right: 0;
+            .introCard{
+                width: 300px;
+                img{
+                    width: 150px;
+                }
+            }
+        }
+        .rightBox{
+            margin-top: 140px;
+        }
     }
-    .leftBox{
-        margin: 0 auto;
+    .portfolio{
+        min-width: 1000px;
+        .projects{
+            width: 800px;
+            height: auto;
+            overflow: visible;
+            .project{
+                background-color: transparent;
+                .info{
+                    opacity: 1;
+                    position: static;
+                    box-shadow: none;
+                }
+            }
+        }
     }
+    .hamburger{
+        display: flex !important;
+    }
+    .sidemenuclass{
+        display: flex;
+    }
+    .topmenu{
+        display: none;
+    }
+
+
   }

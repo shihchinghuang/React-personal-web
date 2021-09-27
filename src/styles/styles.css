@@ -44,9 +44,7 @@ nav img {
 nav .hamburger {
   width: 50px;
   height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -92,6 +90,7 @@ nav.active .hamburger span:last-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 5;
 }
 
 .topmenu li {
@@ -121,6 +120,7 @@ nav.active .hamburger span:last-child {
 
 .sidemenuclass {
   position: relative;
+  display: none;
 }
 
 .sidemenuclass .sidemenu {
@@ -314,6 +314,8 @@ nav.active .hamburger span:last-child {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .portfolio .projects .project:hover img {
@@ -518,12 +520,48 @@ nav.active .hamburger span:last-child {
   margin-bottom: 50px;
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    width: 100%;
+@media screen and (max-width: 1000px) {
+  .homePage {
+    min-width: 1000px;
   }
-  .leftBox {
-    margin: 0 auto;
+  .homePage .leftBox .introCard {
+    width: 300px;
+  }
+  .homePage .leftBox .introCard img {
+    width: 150px;
+  }
+  .homePage .rightBox {
+    margin-top: 140px;
+  }
+  .portfolio {
+    min-width: 1000px;
+  }
+  .portfolio .projects {
+    width: 800px;
+    height: auto;
+    overflow: visible;
+  }
+  .portfolio .projects .project {
+    background-color: transparent;
+  }
+  .portfolio .projects .project .info {
+    opacity: 1;
+    position: static;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .hamburger {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .sidemenuclass {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .topmenu {
+    display: none;
   }
 }
 /*# sourceMappingURL=styles.css.map */
