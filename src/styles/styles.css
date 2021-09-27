@@ -275,7 +275,7 @@ nav.active .hamburger span:last-child {
           transform: rotate(180deg);
   right: 0;
   width: 100%;
-  bottom: 0;
+  bottom: -10px;
   -webkit-animation: waveMove 3s infinite ease;
           animation: waveMove 3s infinite ease;
   animation-direction: alternate-reverse;
@@ -314,8 +314,8 @@ nav.active .hamburger span:last-child {
 .portfolio {
   width: 100%;
   padding-top: 50px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#E3D9C9), to(#F7F3E3));
-  background: linear-gradient(to bottom, #E3D9C9, #F7F3E3);
+  background: -webkit-gradient(linear, left top, left bottom, from(#E2D9C8), to(#F7F3E3));
+  background: linear-gradient(to bottom, #E2D9C8, #F7F3E3);
 }
 
 .portfolio h1 {
@@ -379,15 +379,15 @@ nav.active .hamburger span:last-child {
   height: 150px;
   position: absolute;
   left: 75px;
-  top: calc(112.5px - 75px);
+  top: calc(50% - 75px);
   opacity: 0;
   border-radius: 5px;
-  background-color: #AF9164;
+  background-color: #B3B6B7;
   -webkit-transition: .1s ease all;
   transition: .1s ease all;
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
           box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
-  color: #F7F3E3;
+  color: #454851;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -511,7 +511,7 @@ nav.active .hamburger span:last-child {
 }
 
 .resume .section .experience .content {
-  display: none;
+  display: block;
 }
 
 .resume .section .experience .content p {
@@ -546,8 +546,13 @@ nav.active .hamburger span:last-child {
   background: url(../img/titlebg.svg) center/15% no-repeat border-box;
 }
 
-.contact .info {
-  width: 1000px;
+.contact img {
+  width: 150px;
+  margin-bottom: 50px;
+}
+
+.contactinfo {
+  width: 500px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -566,12 +571,12 @@ nav.active .hamburger span:last-child {
       flex-wrap: wrap;
 }
 
-.contact .info a:hover .infoicon {
+.contactinfo a:hover .infoicon {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
 }
 
-.contact .info .infoicon {
+.contactinfo .infoicon {
   width: 50px;
   height: 50px;
   fill: #2B2118;
@@ -580,32 +585,29 @@ nav.active .hamburger span:last-child {
   padding-bottom: 10px;
 }
 
-.contact .info .email {
+.contactinfo .email {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   position: relative;
 }
 
-.contact .info .email h1 {
+.contactinfo .email h1 {
   display: none;
 }
 
-.contact .info .email .infoicon {
+.contactinfo .email .infoicon {
   cursor: pointer;
 }
 
-.contact .info .email p {
+.contactinfo .email span {
   font-size: 12px;
   position: absolute;
+  top: 65px;
+  left: 0;
   width: 120px;
   text-align: center;
-  margin-top: -50px;
-}
-
-.contact img {
-  width: 150px;
-  margin-bottom: 50px;
+  color: #2B2118;
 }
 
 @media screen and (max-width: 1000px) {
@@ -665,6 +667,7 @@ nav.active .hamburger span:last-child {
   .homePage .leftBox .introCard img {
     width: 300px;
     height: 300px;
+    margin-left: 80px;
   }
   .homePage .rightBox {
     margin-top: 50px;

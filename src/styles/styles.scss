@@ -220,7 +220,7 @@ nav{
         transform:rotate(180deg);
         right: 0;
         width: 100%;
-        bottom: 0;
+        bottom: -10px;
         animation: waveMove 3s infinite ease ;
         animation-direction: alternate-reverse;
     }
@@ -245,7 +245,7 @@ nav{
 .portfolio{
     width: 100%;
     padding-top: 50px;
-    background: linear-gradient(to bottom, #E3D9C9, #F7F3E3);
+    background: linear-gradient(to bottom, #E2D9C8, #F7F3E3);
     h1{
         padding: 50px 0;
         font-weight: 100;
@@ -292,13 +292,13 @@ nav{
                 height: 150px;
                 position: absolute;
                 left: 75px;
-                top: calc(112.5px - 75px);
+                top: calc(50% - 75px);
                 opacity: 0;
                 border-radius: 5px;
-                background-color: $lightBrown;
+                background-color: $lightGrey;
                 transition: .1s ease all;
                 box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
-                color: $wheat;
+                color: $darkGrey;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
@@ -394,7 +394,7 @@ nav{
                 }
                 
                 .content{
-                    display: none;
+                    display: block;
                     
                     p{
                         margin: 15px 0;
@@ -430,53 +430,55 @@ nav{
         margin: auto;
         background: url(../img/titlebg.svg) center/15% no-repeat border-box;
     }
-    .info{
-        width: 1000px;
-        height: fit-content;
-        margin: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        a{
-            &:hover .infoicon{
-                transform: scale(1.5);
-            }
-        }
-        .infoicon{
-            width: 50px;
-            height: 50px;
-            fill: $darkBrown;
-            margin: 30px;
-            border-bottom: 5px solid $lightBrown;
-            padding-bottom: 10px;
-        }
-        .email{
-            height: fit-content;
-            position: relative;
-            h1{
-                display: none;
-            }
-            .infoicon{
-                cursor: pointer;
-            }
-            p{
-                font-size: 12px;
-                position: absolute;
-                width: 120px;
-                text-align: center;
-                margin-top: -50px;
-            }
-        }
-        
-    }
+    
     img{
         width: 150px;
         margin-bottom: 50px;
     }
 }
-
-@media screen and (max-width:1000px) {
+.contactinfo{
+    width: 500px;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    a{
+        &:hover .infoicon{
+            transform: scale(1.5);
+        }
+    }
+    .infoicon{
+        width: 50px;
+        height: 50px;
+        fill: $darkBrown;
+        margin: 30px;
+        border-bottom: 5px solid $lightBrown;
+        padding-bottom: 10px;
+    }
+    .email{
+        height: fit-content;
+        position: relative;
+        h1{
+            display: none;
+        }
+        .infoicon{
+            cursor: pointer;
+        }
+        span{
+            font-size: 12px;
+            position: absolute;
+            top: 65px;
+            left: 0;
+            width: 120px;
+            text-align: center;
+            color: $darkBrown;
+        }
+    }
+    
+}
+@media screen and (max-width: 1000px) {
     
     .sidemenuclass{
         display: flex;
@@ -523,6 +525,7 @@ nav{
                 img{
                     width: 300px;
                     height: 300px;
+                    margin-left: 80px;
                 }
             }
         }

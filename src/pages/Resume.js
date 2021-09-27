@@ -35,12 +35,12 @@ const Resume = () => {
               <p>資策會　前端工程師就業養成班</p>
               <p>2021.02 - 2021.07</p>
             </div>
-            <ResumeSeeMore
+            {/* <ResumeSeeMore
               content={content}
               setContent={setContent}
               showContent={showContent}
-            />
-            <div className={'content arrowicon ' + (content && 'active')}>
+            /> */}
+            <div className={'content ' + (content && 'active')}>
               <p>
                 與五名組員協作期末專題，主題為女性生理用品電商網站 Lunar
                 Phase，主要負責文章區塊之頁面及功能設計，包含留言功能、字體縮放功能等。
@@ -63,12 +63,12 @@ const Resume = () => {
               <p>立法院時代力量黨團　教育及文化法案助理</p>
               <p>2018.08 - 2021.02</p>
             </div>
-            <ResumeSeeMore
+            {/* <ResumeSeeMore
               content={content}
               setContent={setContent}
               showContent={showContent}
-            />
-            <div className={'content arrowicon ' + (content && 'active')}>
+            /> */}
+            <div className={'content ' + (content && 'active')}>
               <p>
                 •
                 細心精準：完整理解相關背景知識，針對法案及政策立場及方向提出建議，並在沒有法律背景下撰寫法案、預算決議等政府登載歷史之正式文書。包含
@@ -101,12 +101,12 @@ const Resume = () => {
               <p>集富亞洲投資有限公司　行政人員</p>
               <p>2017.09 - 2018.03</p>
             </div>
-            <ResumeSeeMore
+            {/* <ResumeSeeMore
               content={content}
               setContent={setContent}
               showContent={showContent}
-            />
-            <div className={'content arrowicon ' + (content && 'active')}>
+            /> */}
+            <div className={'content ' + (content && 'active')}>
               <p>
                 •
                 英文能力：以英文商業書信來往，協助管理主管行程、接待訪客，細心、有效率。
@@ -121,12 +121,12 @@ const Resume = () => {
               <p>台灣壹週刊　社群編輯</p>
               <p>2016.08 - 2017.08</p>
             </div>
-            <ResumeSeeMore
+            {/* <ResumeSeeMore
               content={content}
               setContent={setContent}
               showContent={showContent}
-            />
-            <div className={'content arrowicon ' + (content && 'active')}>
+            /> */}
+            <div className={'content ' + (content && 'active')}>
               <p>
                 •
                 掌握趨勢：平時喜歡關注各類新聞，能夠掌握網友喜好，曾創下公司單月最高流量。
@@ -146,12 +146,12 @@ const Resume = () => {
               <p>關鍵評論網　社群編輯實習生</p>
               <p>2015.11 - 2016.05</p>
             </div>
-            <ResumeSeeMore
+            {/* <ResumeSeeMore
               content={content}
               setContent={setContent}
               showContent={showContent}
-            />
-            <div className={'content arrowicon ' + (content && 'active')}>
+            /> */}
+            <div className={'content ' + (content && 'active')}>
               <p>
                 • 社群經營：管理兩個 Facebook 粉絲專頁、LINE@及 APP
                 等社群工具；與編輯合作排程。
@@ -163,12 +163,12 @@ const Resume = () => {
               <p>關鍵評論網　商業發展實習生</p>
               <p>2015.03 - 2015.11</p>
             </div>
-            <ResumeSeeMore
+            {/* <ResumeSeeMore
               content={content}
               setContent={setContent}
               showContent={showContent}
-            />
-            <div className={'content arrowicon ' + (content && 'active')}>
+            /> */}
+            <div className={'content ' + (content && 'active')}>
               <p>
                 •
                 個案分析：製作超過三份個案分析及公司營運方針規劃等，有資料統整能力。
@@ -184,12 +184,12 @@ const Resume = () => {
               <p>淡江大學　國際企業學系</p>
               <p>2012.09 - 2016.06</p>
             </div>
-            <ResumeSeeMore
+            {/* <ResumeSeeMore
               content={content}
               setContent={setContent}
               showContent={showContent}
-            />
-            <div className={'content arrowicon ' + (content && 'active')}>
+            /> */}
+            <div className={'content ' + (content && 'active')}>
               <p>
                 • 期間參與校外
                 <a

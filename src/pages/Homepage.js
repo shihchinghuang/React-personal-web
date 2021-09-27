@@ -3,6 +3,7 @@ import ProfilePic from '../img/profile-pic.jpeg';
 import { AiFillGithub } from 'react-icons/ai';
 import { AiFillLinkedin } from 'react-icons/ai';
 import waves from '../img/waves.svg';
+import ContactIcons from '../components/ContactIcons';
 
 const Homepage = () => {
   return (
@@ -14,14 +15,17 @@ const Homepage = () => {
             <h1>黃詩晴</h1>
             <p></p>
             <h3>前端工程師</h3>
-            <div className="icon">
-              <a href="https://github.com/shihchinghuang?tab=repositories">
+            <ContactIcons />
+
+            {/* <div className="icon"> */}
+            {/* <ContactIcons /> */}
+            {/* <a href="https://github.com/shihchinghuang?tab=repositories">
                 <AiFillGithub className="github" />
               </a>
               <a href="https://www.linkedin.com/in/shihching-huang-4680a68b/">
                 <AiFillLinkedin className="linkedin" />
-              </a>
-            </div>
+              </a> */}
+            {/* </div> */}
           </div>
         </div>
       </div>
