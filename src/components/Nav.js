@@ -1,11 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Logo from '../img/logo.svg';
+import Hamburger from './Hamburger';
+import Sidemenu from './Sidemenu';
 
 const Nav = () => {
+  const [hambugerOpen, setHambugerOpen] = useState(false);
+
+  const showMenu = () => {
+    setHambugerOpen(!hambugerOpen);
+  };
+
   return (
-    <nav>
-      <img src={Logo} alt="" />
-      <ul>
+    <>
+      <nav className={hambugerOpen && 'active'}>
+        <a href="#homepage">
+          <img src={Logo} alt="" />
+        </a>
+        {/* <ul class="topmenu"> */}
+        <Hamburger
+          hambugerOpen={hambugerOpen}
+          setHambugerOpen={setHambugerOpen}
+          showMenu={showMenu}
+        />
+      </nav>
+      {/* <ul className="topmenu">
         <li>
           <a href="#homepage">ABOUT</a>
         </li>
@@ -17,12 +35,20 @@ const Nav = () => {
         </li>
         <li>
           <a href="#contact">CONTACT</a>
-        </li>
-        {/* <li>
+        </li>{' '}
+      </ul> */}
+      <div className="sidemenuclass">
+        <Sidemenu
+          hambugerOpen={hambugerOpen}
+          setHambugerOpen={setHambugerOpen}
+          showMenu={showMenu}
+        />
+      </div>
+
+      {/* <li>
           <a href="/">English Version</a>
         </li> */}
-      </ul>
-    </nav>
+    </>
   );
 };
 

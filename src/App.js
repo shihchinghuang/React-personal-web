@@ -5,9 +5,12 @@ import Homepage from './pages/Homepage';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
-import reactapi from './img/reactapi.png';
-import jsminigame from './img/jsminigame.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 function App() {
+  AOS.init();
+
   return (
     <div className="app">
       <Nav />

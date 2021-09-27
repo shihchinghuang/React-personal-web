@@ -2,12 +2,8 @@ import React, { useState } from 'react';
 import { AiOutlineMail, AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import footer from '../img/footer.svg';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 const Contact = () => {
-  AOS.init();
-
   const [copy, setCopy] = useState(false);
   const [instruction, setInstruction] = useState('');
   const [iconSize, setIconSize] = useState('1');
@@ -49,12 +45,20 @@ const Contact = () => {
         </div>
 
         <div data-aos="fade-up" data-aos-delay="150">
-          <a href="https://github.com/shihchinghuang?tab=repositories">
+          <a
+            target="_blank"
+            href="https://github.com/shihchinghuang?tab=repositories"
+            rel="noreferrer"
+          >
             <AiFillGithub className="infoicon" />
           </a>
         </div>
         <div data-aos="fade-up" data-aos-delay="200">
-          <a href="https://www.linkedin.com/in/shihching-huang-4680a68b/">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/shihching-huang-4680a68b/"
+            rel="noreferrer"
+          >
             <AiFillLinkedin className="infoicon" />
           </a>
         </div>

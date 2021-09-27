@@ -3,12 +3,8 @@ import ProfilePic from '../img/profile-pic.jpeg';
 import { AiFillGithub } from 'react-icons/ai';
 import { AiFillLinkedin } from 'react-icons/ai';
 import waves from '../img/waves.svg';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 const Homepage = () => {
-  AOS.init();
-
   return (
     <div className="homePage" id="homepage">
       <div className="leftBox">
@@ -38,8 +34,8 @@ const Homepage = () => {
           <p>熟悉 HTML/CSS/JavaScript/React/GitHub</p>
           <p>多益 915 分金色證書</p>
         </div>
-        <img className="waves" src={waves} alt="" />
       </div>
+      <img className="waves" src={waves} alt="" />
     </div>
   );
 };

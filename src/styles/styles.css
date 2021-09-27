@@ -9,10 +9,14 @@
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #F7F3E3;
+}
+
 nav {
   width: 100%;
   height: 60px;
-  z-index: 1;
+  z-index: 10;
   background-color: #2B2118;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,70 +27,177 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 50px;
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 30px 5px;
           box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 30px 5px;
   position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-transition: .7s ease all;
+  transition: .7s ease all;
 }
 
 nav img {
   width: 50px;
+  margin-left: 50px;
 }
 
-nav ul {
+nav .hamburger {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  cursor: pointer;
+  margin-right: 50px;
+}
+
+nav .hamburger span {
+  width: 40px;
+  height: 3px;
+  background-color: #F7F3E3;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: .7s ease all;
+  transition: .7s ease all;
+}
+
+nav.active {
+  background-color: #B3B6B7;
+}
+
+nav.active .hamburger span:first-child {
+  background-color: #2B2118;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+nav.active .hamburger span:nth-child(2) {
+  opacity: 0;
+}
+
+nav.active .hamburger span:last-child {
+  background-color: #2B2118;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.topmenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-nav ul li {
+.topmenu li {
   list-style: none;
   padding: 0 30px;
   height: 60px;
+  -webkit-transition: .2s ease all;
+  transition: .2s ease all;
 }
 
-nav ul li:hover {
+.topmenu li:hover {
   background-color: #F7F3E3;
 }
 
-nav ul li:hover a {
+.topmenu li:hover a {
   color: #2B2118;
+  padding-bottom: 5px;
+  border-bottom: 1px #2B2118 solid;
 }
 
-nav ul li a {
+.topmenu li a {
   color: #F7F3E3;
   text-decoration: none;
   margin: auto 0;
   line-height: 60px;
 }
 
-.homePage {
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.homePage .leftBox {
-  background: -webkit-gradient(linear, left bottom, left top, from(#E3D9C9), to(#F7F3E3));
-  background: linear-gradient(to top, #E3D9C9, #F7F3E3);
-  width: 40vw;
-  height: 100vh;
+.sidemenuclass {
   position: relative;
 }
 
+.sidemenuclass .sidemenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #B3B6B7;
+  width: 300px;
+  position: fixed;
+  top: 60px;
+  right: -300px;
+  z-index: 10;
+  -webkit-transition: .7s ease all;
+  transition: .7s ease all;
+}
+
+.sidemenuclass .sidemenu.active {
+  right: 0;
+}
+
+.sidemenuclass .sidemenu li {
+  list-style: none;
+  height: 80px;
+  padding: 0 60px;
+  -webkit-transition: .2s ease all;
+  transition: .2s ease all;
+}
+
+.sidemenuclass .sidemenu li:hover {
+  background-color: #2B2118;
+}
+
+.sidemenuclass .sidemenu li:hover a {
+  color: #F7F3E3;
+  padding-bottom: 5px;
+  border-bottom: 1px #F7F3E3 solid;
+}
+
+.sidemenuclass .sidemenu li a {
+  color: #2B2118;
+  text-decoration: none;
+  margin: auto 0;
+  line-height: 80px;
+}
+
+.homePage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(#E3D9C9), to(#F7F3E3));
+  background: linear-gradient(to bottom, #E3D9C9, #F7F3E3);
+}
+
+.homePage .leftBox {
+  margin-top: 120px;
+  margin-right: 80px;
+  z-index: 5;
+}
+
 .homePage .leftBox .introCard {
-  width: 25vw;
-  height: 75vh;
+  min-width: 30vw;
   background: #F7F3E3;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  position: absolute;
-  top: 130px;
-  left: 300px;
   text-align: center;
   padding: 30px 0;
   color: #AF9164;
@@ -119,11 +230,15 @@ nav ul li a {
   margin: 10px;
 }
 
+.homePage .leftBox .introCard .icon .github:hover, .homePage .leftBox .introCard .icon .linkedin:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
 .homePage .rightBox {
-  width: 50vw;
-  padding: 150px 50px;
   color: #2B2118;
-  position: relative;
+  margin-top: 180px;
+  z-index: 5;
 }
 
 .homePage .rightBox h2 {
@@ -149,20 +264,19 @@ nav ul li a {
   padding-left: -10px;
 }
 
-.homePage .rightBox img {
+.homePage .waves {
   position: absolute;
-  z-index: -1;
+  height: 200px;
+  z-index: 1;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  bottom: 0;
   right: 0;
-  width: 900px;
-  height: 150px;
+  width: 100%;
+  bottom: 0;
 }
 
 .portfolio {
   width: 100%;
-  height: 130vh;
   padding-top: 50px;
   background: -webkit-gradient(linear, left top, left bottom, from(#E3D9C9), to(#F7F3E3));
   background: linear-gradient(to bottom, #E3D9C9, #F7F3E3);
@@ -261,7 +375,6 @@ nav ul li a {
 }
 
 .resume {
-  height: 100vh;
   background-color: #F7F3E3;
   padding-top: 30px;
 }
@@ -334,10 +447,8 @@ nav ul li a {
 }
 
 .contact {
-  height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(#F7F3E3), to(#B3B6B7));
   background: linear-gradient(to bottom, #F7F3E3, #B3B6B7);
-  padding-top: 200px;
   text-align: center;
 }
 
@@ -404,5 +515,15 @@ nav ul li a {
 
 .contact img {
   width: 150px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+  .leftBox {
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
