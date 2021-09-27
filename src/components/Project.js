@@ -6,8 +6,9 @@ const Project = ({ data }) => {
     <>
       <div className="project">
         <img src={data.img} alt="" />
+        <p className="title-mobile">{data.title}</p>
         <div className="info">
-          <p>{data.title}</p>
+          <p className="title">{data.title}</p>
           <a target="_blank" href={data.repo} rel="noreferrer">
             GitHub Repo
           </a>

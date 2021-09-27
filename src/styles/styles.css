@@ -334,6 +334,10 @@ nav.active .hamburger span:last-child {
   transition: .5s ease all;
 }
 
+.portfolio .projects .project .title-mobile {
+  display: none;
+}
+
 .portfolio .projects .project .info {
   width: 300px;
   height: 150px;
@@ -545,10 +549,43 @@ nav.active .hamburger span:last-child {
     background-color: transparent;
   }
   .portfolio .projects .project .info {
+    width: 100%;
+    height: auto;
     opacity: 1;
     position: static;
     -webkit-box-shadow: none;
             box-shadow: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 10px 0;
+    margin-top: 10px;
+  }
+  .portfolio .projects .project .info a {
+    margin: 0;
+    padding: 0;
+  }
+  .portfolio .projects .project .info .title {
+    display: none;
+  }
+  .portfolio .projects .project .title-mobile {
+    display: block;
+    margin: auto;
+  }
+  .resume {
+    min-width: 1000px;
+  }
+  .resume .section {
+    width: 800px;
+    height: auto;
+    overflow: visible;
+  }
+  .resume .section .experience .box {
+    width: 700px;
+  }
+  .contact {
+    min-width: 1000px;
   }
   .hamburger {
     display: -webkit-box !important;
