@@ -116,7 +116,6 @@ nav{
         right: -500px;
         z-index: 10;
         transition: .7s ease all;
-
         &.active{
             right: 0;
         }
@@ -323,6 +322,8 @@ nav{
     
 }
 
+
+
 .resume{
     background-color: $wheat;
     padding-top: 30px;
@@ -341,7 +342,6 @@ nav{
         padding: 30px;
         overflow-y: scroll;
         box-shadow: $darkBrown 0px 0px 0px 2px,$lightBrown 20px -20px;
-
         h3{
             text-align: center;
             font-weight: 400;
@@ -352,7 +352,6 @@ nav{
             font-weight: 200;
         }
         .experience{
-            
             .box{
                 width: 800px;
                 border-radius: 5px;
@@ -362,6 +361,8 @@ nav{
                 margin-bottom: 50px;
                 padding: 50px 80px;
                 font-weight: 300;
+                
+                
                 .title{
                     font-weight: 400;
                     border-bottom: $coral 1px solid;
@@ -370,7 +371,31 @@ nav{
                     justify-content: space-between;
                     flex-wrap: wrap;
                 }
+                .seemore{
+                    width: fit-content;
+                    margin: auto;
+                    font-size: 30px;
+                    margin-top: 10px;
+                    cursor: pointer;
+                    .arrowicon{
+                        fill: $coral;
+                    }
+                    .arrow{
+                        transform: rotate(-180deg);
+                        
+                        }
+                    @keyframes rotate {
+                            100%{
+                                transform: rotate(-90deg);
+                                }
+                            }
+                    }
+                    
+                }
+                
                 .content{
+                    display: none;
+                    
                     p{
                         margin: 15px 0;
                     }
@@ -381,7 +406,12 @@ nav{
                             color: $coral;
                         }
                     }
+                    &.active{
+                       display: block;
+                       
+                    
                 }
+                
             }
         }
         

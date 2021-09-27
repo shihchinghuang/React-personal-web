@@ -477,17 +477,58 @@ nav.active .hamburger span:last-child {
       flex-wrap: wrap;
 }
 
-.resume .section .experience .box .content p {
+.resume .section .experience .box .seemore {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  font-size: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.resume .section .experience .box .seemore .arrowicon {
+  fill: #DF7373;
+}
+
+.resume .section .experience .box .seemore .arrow {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+}
+
+.resume .section .experience .content {
+  display: none;
+}
+
+.resume .section .experience .content p {
   margin: 15px 0;
 }
 
-.resume .section .experience .box .content a {
+.resume .section .experience .content a {
   color: #AF9164;
   text-decoration: none;
 }
 
-.resume .section .experience .box .content a:hover {
+.resume .section .experience .content a:hover {
   color: #DF7373;
+}
+
+.resume .section .experience .content.active {
+  display: block;
 }
 
 .contact {
