@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/React-personal-web/static/css/main.cd557faf.chunk.css",
-    "main.js": "/React-personal-web/static/js/main.1ea7a3c8.chunk.js",
-    "main.js.map": "/React-personal-web/static/js/main.1ea7a3c8.chunk.js.map",
+    "main.css": "/React-personal-web/static/css/main.cc9d040a.chunk.css",
+    "main.js": "/React-personal-web/static/js/main.1e41f163.chunk.js",
+    "main.js.map": "/React-personal-web/static/js/main.1e41f163.chunk.js.map",
     "runtime-main.js": "/React-personal-web/static/js/runtime-main.fa223124.js",
     "runtime-main.js.map": "/React-personal-web/static/js/runtime-main.fa223124.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/React-personal-web/static/css/2.7fc9bc2b.chunk.css",
-    "static/js/2.7ef23974.chunk.js": "/React-personal-web/static/js/2.7ef23974.chunk.js",
-    "static/js/2.7ef23974.chunk.js.map": "/React-personal-web/static/js/2.7ef23974.chunk.js.map",
+    "static/js/2.bebd15e8.chunk.js": "/React-personal-web/static/js/2.bebd15e8.chunk.js",
+    "static/js/2.bebd15e8.chunk.js.map": "/React-personal-web/static/js/2.bebd15e8.chunk.js.map",
     "index.html": "/React-personal-web/index.html",
     "static/css/2.7fc9bc2b.chunk.css.map": "/React-personal-web/static/css/2.7fc9bc2b.chunk.css.map",
-    "static/css/main.cd557faf.chunk.css.map": "/React-personal-web/static/css/main.cd557faf.chunk.css.map",
-    "static/js/2.7ef23974.chunk.js.LICENSE.txt": "/React-personal-web/static/js/2.7ef23974.chunk.js.LICENSE.txt",
+    "static/css/main.cc9d040a.chunk.css.map": "/React-personal-web/static/css/main.cc9d040a.chunk.css.map",
+    "static/js/2.bebd15e8.chunk.js.LICENSE.txt": "/React-personal-web/static/js/2.bebd15e8.chunk.js.LICENSE.txt",
     "static/media/footer.37ce4b28.svg": "/React-personal-web/static/media/footer.37ce4b28.svg",
     "static/media/jsapi.5f42cbf3.png": "/React-personal-web/static/media/jsapi.5f42cbf3.png",
     "static/media/jsminigame.d3c39b71.png": "/React-personal-web/static/media/jsminigame.d3c39b71.png",
@@ -27,8 +27,8 @@
   "entrypoints": [
     "static/js/runtime-main.fa223124.js",
     "static/css/2.7fc9bc2b.chunk.css",
-    "static/js/2.7ef23974.chunk.js",
-    "static/css/main.cd557faf.chunk.css",
-    "static/js/main.1ea7a3c8.chunk.js"
+    "static/js/2.bebd15e8.chunk.js",
+    "static/css/main.cc9d040a.chunk.css",
+    "static/js/main.1e41f163.chunk.js"
   ]
 }
