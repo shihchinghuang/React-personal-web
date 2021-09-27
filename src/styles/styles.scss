@@ -42,15 +42,15 @@ nav{
             height: 50px;
             display: none;
             flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: space-between;
             cursor: pointer;
             margin-right: 50px;
 
             span{
-                width: 40px;
-                height: 3px;
+                width: 80px;
+                height: 5px;
                 background-color: $wheat;
-                transform-origin: left;
+                transform-origin: 10px;
                 transition: .7s ease all;
             }
         }
@@ -108,10 +108,10 @@ nav{
         flex-direction: column;
         justify-content: center;
         background-color: $lightGrey;
-        width: 300px;
+        width: 500px;
         position: fixed;
-        top: 60px;
-        right: -300px;
+        top: 150px;
+        right: -500px;
         z-index: 10;
         transition: .7s ease all;
 
@@ -120,9 +120,10 @@ nav{
         }
         li{
             list-style: none;
-            height: 80px;
+            height: 250px;
             padding: 0 60px;
             transition: .2s ease all;
+            font-size: 48px;
             &:hover{
                 background-color: $darkBrown;
             }
@@ -135,7 +136,7 @@ nav{
                 color: $darkBrown;
                 text-decoration: none;
                 margin: auto 0;
-                line-height: 80px;
+                line-height: 250px;
             }
         }
         
@@ -422,8 +423,27 @@ nav{
 }
 
 @media screen and (max-width:1000px) {
+    
+    .sidemenuclass{
+        display: flex;
+    }
+    .topmenu{
+        display: none;
+    }
+    nav{
+        height: 150px;
+        img{
+            width: 100px;
+            margin-left: 100px;
+        }
+        .hamburger{
+            display: flex;
+            margin-right: 100px;
+        }
+    }
     .homePage{
         min-width: 1000px;
+        margin-top: 80px;
         .leftBox{
             // margin-right: 0;
             .introCard{
@@ -471,6 +491,7 @@ nav{
     }
     .resume{
         min-width: 1000px;
+        height: auto;
         .section{
             width: 800px;
             height: auto;
@@ -486,15 +507,7 @@ nav{
         min-width: 1000px;
 
     }
-    .hamburger{
-        display: flex !important;
-    }
-    .sidemenuclass{
-        display: flex;
-    }
-    .topmenu{
-        display: none;
-    }
+    
 
 
   }

@@ -49,19 +49,19 @@ nav .hamburger {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   cursor: pointer;
   margin-right: 50px;
 }
 
 nav .hamburger span {
-  width: 40px;
-  height: 3px;
+  width: 80px;
+  height: 5px;
   background-color: #F7F3E3;
-  -webkit-transform-origin: left;
-          transform-origin: left;
+  -webkit-transform-origin: 10px;
+          transform-origin: 10px;
   -webkit-transition: .7s ease all;
   transition: .7s ease all;
 }
@@ -135,10 +135,10 @@ nav.active .hamburger span:last-child {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #B3B6B7;
-  width: 300px;
+  width: 500px;
   position: fixed;
-  top: 60px;
-  right: -300px;
+  top: 150px;
+  right: -500px;
   z-index: 10;
   -webkit-transition: .7s ease all;
   transition: .7s ease all;
@@ -150,10 +150,11 @@ nav.active .hamburger span:last-child {
 
 .sidemenuclass .sidemenu li {
   list-style: none;
-  height: 80px;
+  height: 250px;
   padding: 0 60px;
   -webkit-transition: .2s ease all;
   transition: .2s ease all;
+  font-size: 48px;
 }
 
 .sidemenuclass .sidemenu li:hover {
@@ -170,7 +171,7 @@ nav.active .hamburger span:last-child {
   color: #2B2118;
   text-decoration: none;
   margin: auto 0;
-  line-height: 80px;
+  line-height: 250px;
 }
 
 .homePage {
@@ -525,8 +526,30 @@ nav.active .hamburger span:last-child {
 }
 
 @media screen and (max-width: 1000px) {
+  .sidemenuclass {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .topmenu {
+    display: none;
+  }
+  nav {
+    height: 150px;
+  }
+  nav img {
+    width: 100px;
+    margin-left: 100px;
+  }
+  nav .hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 100px;
+  }
   .homePage {
     min-width: 1000px;
+    margin-top: 80px;
   }
   .homePage .leftBox .introCard {
     width: 300px;
@@ -575,6 +598,7 @@ nav.active .hamburger span:last-child {
   }
   .resume {
     min-width: 1000px;
+    height: auto;
   }
   .resume .section {
     width: 800px;
@@ -586,19 +610,6 @@ nav.active .hamburger span:last-child {
   }
   .contact {
     min-width: 1000px;
-  }
-  .hamburger {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-  }
-  .sidemenuclass {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .topmenu {
-    display: none;
   }
 }
 /*# sourceMappingURL=styles.css.map */
