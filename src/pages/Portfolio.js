@@ -30,7 +30,7 @@ const Portfolio = () => {
         'https://shihchinghuang.github.io/JavaScript-Review-Portfolio/public/to-do-list/index.html',
     },
     {
-      title: '透過 JavaScript 實作fetch API',
+      title: '透過 JavaScript 實作 fetch API',
       img: jsapi,
       repo: 'https://github.com/shihchinghuang/JavaScript-Review-Portfolio/tree/main/public/fetch-filter-user-list',
       pages:

@@ -10,16 +10,18 @@ const Homepage = () => {
       <div className="leftBox">
         <div className="introCard" data-aos="fade-right">
           <img src={ProfilePic} alt="" />
-          <h1>黃詩晴</h1>
-          <p></p>
-          <h3>前端工程師</h3>
-          <div className="icon">
-            <a href="https://github.com/shihchinghuang?tab=repositories">
-              <AiFillGithub className="github" />
-            </a>
-            <a href="https://www.linkedin.com/in/shihching-huang-4680a68b/">
-              <AiFillLinkedin className="linkedin" />
-            </a>
+          <div>
+            <h1>黃詩晴</h1>
+            <p></p>
+            <h3>前端工程師</h3>
+            <div className="icon">
+              <a href="https://github.com/shihchinghuang?tab=repositories">
+                <AiFillGithub className="github" />
+              </a>
+              <a href="https://www.linkedin.com/in/shihching-huang-4680a68b/">
+                <AiFillLinkedin className="linkedin" />
+              </a>
+            </div>
           </div>
         </div>
       </div>

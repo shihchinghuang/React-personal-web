@@ -224,7 +224,7 @@ nav.active .hamburger span:last-child {
 }
 
 .homePage .leftBox .introCard .icon {
-  margin: 20px auto;
+  margin-top: 20px;
 }
 
 .homePage .leftBox .introCard .icon .github, .homePage .leftBox .introCard .icon .linkedin {
@@ -558,13 +558,22 @@ nav.active .hamburger span:last-child {
   }
   .homePage {
     min-width: 1000px;
-    margin-top: 80px;
+    margin-top: 150px;
   }
   .homePage .leftBox {
     margin-right: 0;
   }
   .homePage .leftBox .introCard {
-    width: 500px;
+    width: 800px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .homePage .leftBox .introCard h1 {
     font-size: 60px;
@@ -573,14 +582,15 @@ nav.active .hamburger span:last-child {
   }
   .homePage .leftBox .introCard h3 {
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 200;
     color: #2B2118;
   }
   .homePage .leftBox .introCard .icon .github, .homePage .leftBox .introCard .icon .linkedin {
     font-size: 70px;
   }
   .homePage .leftBox .introCard img {
-    width: 150px;
+    width: 300px;
+    height: 300px;
   }
   .homePage .rightBox {
     margin-top: 50px;
@@ -592,6 +602,7 @@ nav.active .hamburger span:last-child {
   .homePage .rightBox h3 {
     margin-bottom: 30px;
     text-align: center;
+    font-size: 40px;
   }
   .homePage .rightBox p {
     font-size: 28px;
@@ -630,8 +641,9 @@ nav.active .hamburger span:last-child {
   .portfolio .projects .project .info a {
     width: auto;
     margin: 0;
-    padding: 10px;
+    padding: 10px 20px;
     font-size: 30px;
+    font-weight: 200;
     background-color: #454851;
     color: #F7F3E3;
   }
