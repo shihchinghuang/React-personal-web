@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/React-personal-web/static/css/main.cc9d040a.chunk.css",
-    "main.js": "/React-personal-web/static/js/main.1e41f163.chunk.js",
-    "main.js.map": "/React-personal-web/static/js/main.1e41f163.chunk.js.map",
+    "main.css": "/React-personal-web/static/css/main.28501634.chunk.css",
+    "main.js": "/React-personal-web/static/js/main.248906c2.chunk.js",
+    "main.js.map": "/React-personal-web/static/js/main.248906c2.chunk.js.map",
     "runtime-main.js": "/React-personal-web/static/js/runtime-main.fa223124.js",
     "runtime-main.js.map": "/React-personal-web/static/js/runtime-main.fa223124.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/React-personal-web/static/css/2.7fc9bc2b.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.bebd15e8.chunk.js.map": "/React-personal-web/static/js/2.bebd15e8.chunk.js.map",
     "index.html": "/React-personal-web/index.html",
     "static/css/2.7fc9bc2b.chunk.css.map": "/React-personal-web/static/css/2.7fc9bc2b.chunk.css.map",
-    "static/css/main.cc9d040a.chunk.css.map": "/React-personal-web/static/css/main.cc9d040a.chunk.css.map",
+    "static/css/main.28501634.chunk.css.map": "/React-personal-web/static/css/main.28501634.chunk.css.map",
     "static/js/2.bebd15e8.chunk.js.LICENSE.txt": "/React-personal-web/static/js/2.bebd15e8.chunk.js.LICENSE.txt",
     "static/media/footer.37ce4b28.svg": "/React-personal-web/static/media/footer.37ce4b28.svg",
     "static/media/jsapi.5f42cbf3.png": "/React-personal-web/static/media/jsapi.5f42cbf3.png",
@@ -22,13 +22,14 @@
     "static/media/reactapi.ae626786.png": "/React-personal-web/static/media/reactapi.ae626786.png",
     "static/media/styles.css": "/React-personal-web/static/media/titlebg.9fa323b2.svg",
     "static/media/tnl.1d3f7a82.png": "/React-personal-web/static/media/tnl.1d3f7a82.png",
-    "static/media/waves.c56d1bec.svg": "/React-personal-web/static/media/waves.c56d1bec.svg"
+    "static/media/waves.c56d1bec.svg": "/React-personal-web/static/media/waves.c56d1bec.svg",
+    "static/media/waves2.309f6f90.svg": "/React-personal-web/static/media/waves2.309f6f90.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.fa223124.js",
     "static/css/2.7fc9bc2b.chunk.css",
     "static/js/2.bebd15e8.chunk.js",
-    "static/css/main.cc9d040a.chunk.css",
-    "static/js/main.1e41f163.chunk.js"
+    "static/css/main.28501634.chunk.css",
+    "static/js/main.248906c2.chunk.js"
   ]
 }
