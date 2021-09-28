@@ -1,8 +1,7 @@
 import React from 'react';
 import ProfilePic from '../img/profile-pic.jpeg';
-import { AiFillGithub } from 'react-icons/ai';
-import { AiFillLinkedin } from 'react-icons/ai';
 import waves from '../img/waves.svg';
+import waves2 from '../img/waves2.svg';
 import ContactIcons from '../components/ContactIcons';
 
 const Homepage = () => {
@@ -32,6 +31,7 @@ const Homepage = () => {
         </div>
       </div>
       <img className="waves" src={waves} alt="" />
+      <img className="waves2" src={waves2} alt="" />
     </div>
   );
 };

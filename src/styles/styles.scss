@@ -213,7 +213,7 @@ nav{
             padding-left: -10px;
         }
     }
-    .waves{
+    .waves, .waves2{
         position: absolute;
         height: 150px;
         z-index: 1;
@@ -224,10 +224,14 @@ nav{
         animation: waveMove 3s infinite ease ;
         animation-direction: alternate-reverse;
     }
+    .waves2{
+        animation: wave2Move 3s infinite ease ;
+        animation-direction: alternate-reverse;
+    }
     @keyframes waveMove {
         0%{
-            height: 200px;
-            width: 100%;
+            height: 50px;
+            width: 150%;
         }
         50%{
             height: 100px;
@@ -236,7 +240,20 @@ nav{
         100%{
             height: 200px;
             width: 120%;
-
+        }
+    }
+    @keyframes wave2Move {
+        0%{
+            height: 100px;
+            width: 100%;
+        }
+        50%{
+            height: 250px;
+            width: 125%;
+        }
+        100%{
+            height: 100px;
+            width: 110%;
         }
         
     }

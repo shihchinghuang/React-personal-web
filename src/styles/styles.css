@@ -267,7 +267,7 @@ nav.active .hamburger span:last-child {
   padding-left: -10px;
 }
 
-.homePage .waves {
+.homePage .waves, .homePage .waves2 {
   position: absolute;
   height: 150px;
   z-index: 1;
@@ -281,10 +281,16 @@ nav.active .hamburger span:last-child {
   animation-direction: alternate-reverse;
 }
 
+.homePage .waves2 {
+  -webkit-animation: wave2Move 3s infinite ease;
+          animation: wave2Move 3s infinite ease;
+  animation-direction: alternate-reverse;
+}
+
 @-webkit-keyframes waveMove {
   0% {
-    height: 200px;
-    width: 100%;
+    height: 50px;
+    width: 150%;
   }
   50% {
     height: 100px;
@@ -298,8 +304,8 @@ nav.active .hamburger span:last-child {
 
 @keyframes waveMove {
   0% {
-    height: 200px;
-    width: 100%;
+    height: 50px;
+    width: 150%;
   }
   50% {
     height: 100px;
@@ -308,6 +314,36 @@ nav.active .hamburger span:last-child {
   100% {
     height: 200px;
     width: 120%;
+  }
+}
+
+@-webkit-keyframes wave2Move {
+  0% {
+    height: 100px;
+    width: 100%;
+  }
+  50% {
+    height: 250px;
+    width: 125%;
+  }
+  100% {
+    height: 100px;
+    width: 110%;
+  }
+}
+
+@keyframes wave2Move {
+  0% {
+    height: 100px;
+    width: 100%;
+  }
+  50% {
+    height: 250px;
+    width: 125%;
+  }
+  100% {
+    height: 100px;
+    width: 110%;
   }
 }
 
