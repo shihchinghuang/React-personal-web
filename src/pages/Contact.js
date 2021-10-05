@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import footer from '../img/footer.svg';
 import ContactIcons from '../components/ContactIcons';
 

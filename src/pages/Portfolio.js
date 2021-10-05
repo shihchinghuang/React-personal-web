@@ -6,9 +6,16 @@ import jstodolist from '../img/jstodolist.png';
 import jsapi from '../img/jsapi.png';
 import tnl from '../img/tnl.png';
 import meierq from '../img/meierq.png';
+import lunarphase from '../img/lunarphase.png';
 
 const Portfolio = () => {
   const data = [
+    {
+      title: '資策會期末專題',
+      img: lunarphase,
+      repo: 'https://github.com/ruby-619/Lunar_Phase_React',
+      pages: 'https://github.com/weichieh123/finalNode_lunar_phase',
+    },
     {
       title: '透過 React 實作 fetch API',
       img: reactapi,
