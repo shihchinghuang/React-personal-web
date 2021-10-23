@@ -3,7 +3,7 @@ import './styles/styles.css';
 import Nav from './components/Nav';
 import Homepage from './pages/Homepage';
 import Portfolio from './pages/Portfolio';
-import Resume from './pages/Resume';
+// import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -17,7 +17,7 @@ function App() {
       <div className="section">
         <Homepage />
         <Portfolio />
-        <Resume />
+        {/* <Resume /> */}
         <Contact />
       </div>
     </div>

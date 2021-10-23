@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import { AiOutlineMail, AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import {
+  AiOutlineMail,
+  AiFillGithub,
+  AiFillLinkedin,
+  AiFillMediumSquare,
+} from 'react-icons/ai';
 
 const ContactIcons = () => {
   const [copy, setCopy] = useState(false);
@@ -57,6 +62,15 @@ const ContactIcons = () => {
             rel="noreferrer"
           >
             <AiFillLinkedin className="infoicon" />
+          </a>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="250">
+          <a
+            target="_blank"
+            href="https://medium.com/@sunnyhuang.sc"
+            rel="noreferrer"
+          >
+            <AiFillMediumSquare className="infoicon" />
           </a>
         </div>
       </div>

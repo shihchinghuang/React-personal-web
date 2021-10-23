@@ -29,9 +29,9 @@ const Nav = () => {
           <li>
             <a href="#portfolio">PORTFOLIO</a>
           </li>
-          <li>
+          {/* <li>
             <a href="#resume">RESUME</a>
-          </li>
+          </li> */}
           <li>
             <a href="#contact">CONTACT</a>
           </li>
