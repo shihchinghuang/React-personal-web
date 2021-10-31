@@ -3,7 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
@@ -38,9 +38,10 @@ nav {
   transition: .7s ease all;
 }
 
-nav img {
-  width: 50px;
+nav .logo {
   margin-left: 50px;
+  color: #F7F3E3;
+  text-decoration: none;
 }
 
 nav .hamburger {
@@ -213,7 +214,7 @@ nav.active .hamburger span:last-child {
 }
 
 .homePage .leftBox .introCard h1, .homePage .leftBox .introCard h3 {
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   font-weight: 400;
 }
 
@@ -242,6 +243,7 @@ nav.active .hamburger span:last-child {
   color: #2B2118;
   margin-top: 150px;
   z-index: 5;
+  width: 40%;
 }
 
 .homePage .rightBox h2 {
@@ -256,7 +258,7 @@ nav.active .hamburger span:last-child {
   font-size: 30px;
 }
 
-.homePage .rightBox p {
+.homePage .rightBox li {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -265,6 +267,7 @@ nav.active .hamburger span:last-child {
   border-bottom: 3px solid #DF7373;
   padding-right: 15px;
   padding-left: -10px;
+  list-style-type: square;
 }
 
 .homePage .waves, .homePage .waves2 {
@@ -639,8 +642,8 @@ nav.active .hamburger span:last-child {
 .contactinfo .email span {
   font-size: 12px;
   position: absolute;
-  top: 65px;
-  left: 0;
+  top: 55px;
+  right: -15px;
   width: 120px;
   text-align: center;
   color: #2B2118;

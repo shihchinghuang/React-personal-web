@@ -11,9 +11,9 @@ const Homepage = () => {
         <div className="introCard" data-aos="fade-right">
           <img src={ProfilePic} alt="" />
           <div>
-            <h1>黃詩晴</h1>
+            <h1>Sunny Huang</h1>
             <p></p>
-            <h3>前端工程師</h3>
+            <h3>Frontend engineer</h3>
             <ContactIcons />
           </div>
         </div>
@@ -23,11 +23,19 @@ const Homepage = () => {
           <h2>Hi there!</h2>
           <h3>
             Here's who I am & what I do. <br />
-            一起成為同事吧～
+            Let's talk!
           </h3>
-          <p>喜歡嘗試不同領域的新事物，迎接挑戰，享受把事情搞懂的過程</p>
-          <p>熟悉 HTML / CSS / JavaScript / React / GitHub</p>
-          <p>多益 915 分金色證書</p>
+          <li>
+            Finishing 3+ projects with HTML / CSS / JavaScript / React / GitHub.
+          </li>
+          <li>
+            With strong communication and cooperation skills based on former
+            work experiences.
+          </li>
+          <li>
+            Eager to learn new stuff, embrace challenges and enjoy solving
+            problems.
+          </li>
         </div>
       </div>
       <img className="waves" src={waves} alt="" />

@@ -11,7 +11,7 @@ $coral: #DF7373;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     font-family: 'Open Sans', sans-serif;
@@ -35,9 +35,10 @@ nav{
     top: 0;
     left: 0;
     transition: .7s ease all;
-        img{
-            width: 50px;
+        .logo{
             margin-left: 50px;
+            color: $wheat;
+            text-decoration: none;
         }
         .hamburger{
             width: 50px;
@@ -169,7 +170,7 @@ nav{
                 margin: 30px 0;
             }
             h1,h3{
-                letter-spacing: 5px;
+                letter-spacing: 2px;
                 font-weight: 400;
             }
             p{
@@ -194,6 +195,7 @@ nav{
         color: $darkBrown;
         margin-top: 150px;
         z-index: 5;
+        width: 40%;
         h2{
             margin-bottom: 15px;
             font-weight: 100;
@@ -204,13 +206,14 @@ nav{
             font-weight: 100;
             font-size: 30px;
         }
-        p{
+        li{
             width: fit-content;
             padding-bottom: 10px;
             margin-bottom: 10px;
             border-bottom: 3px solid $coral;
             padding-right: 15px;
             padding-left: -10px;
+            list-style-type: square;
         }
     }
     .waves, .waves2{
@@ -486,8 +489,8 @@ nav{
         span{
             font-size: 12px;
             position: absolute;
-            top: 65px;
-            left: 0;
+            top: 55px;
+            right: -15px;
             width: 120px;
             text-align: center;
             color: $darkBrown;

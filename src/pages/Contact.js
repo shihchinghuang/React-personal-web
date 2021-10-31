@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div className="contact" id="contact">
       <h1>Contact</h1>
-      <p>黃詩晴</p>
+      <p>Sunny Huang</p>
       <ContactIcons />
       <img src={footer} alt="" />
     </div>

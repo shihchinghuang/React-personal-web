@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Logo from '../img/logo.svg';
 import Hamburger from './Hamburger';
 import Sidemenu from './Sidemenu';
 
@@ -13,8 +12,8 @@ const Nav = () => {
   return (
     <>
       <nav className={hambugerOpen && 'active'}>
-        <a href="#homepage">
-          <img src={Logo} alt="" />
+        <a className="logo" href="#homepage">
+          Sunny Huang
         </a>
         {/* <ul class="topmenu"> */}
         <Hamburger

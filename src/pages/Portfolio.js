@@ -11,47 +11,47 @@ import lunarphase from '../img/lunarphase.png';
 const Portfolio = () => {
   const data = [
     {
-      title: '資策會期末專題',
+      title: 'Final Project in frontend courses',
       img: lunarphase,
       repo: 'https://github.com/ruby-619/Lunar_Phase_React',
       pages: 'https://github.com/weichieh123/finalNode_lunar_phase',
     },
     {
-      title: '透過 React 實作 fetch API',
+      title: 'Practicing fetch-API with React',
       img: reactapi,
       repo: 'https://github.com/shihchinghuang/React-API',
       pages: 'https://shihchinghuang.github.io/React-API/',
     },
     {
-      title: 'JavaScript 小遊戲',
+      title: 'JavaScript mini games',
       img: jsminigame,
       repo: 'https://github.com/shihchinghuang/JavaScript-Review-Portfolio/tree/main/public/JavaScript-Mini-Games',
       pages:
         'https://shihchinghuang.github.io/JavaScript-Review-Portfolio/public/JavaScript-Mini-Games/index.html',
     },
     {
-      title: '透過 JavaScript 實作 to-do-list',
+      title: 'To-do-list project with JavaScript',
       img: jstodolist,
       repo: 'https://github.com/shihchinghuang/JavaScript-Review-Portfolio/tree/main/public/to-do-list',
       pages:
         'https://shihchinghuang.github.io/JavaScript-Review-Portfolio/public/to-do-list/index.html',
     },
     {
-      title: '透過 JavaScript 實作 fetch API',
+      title: 'Practicing fetch-API with JavaScript',
       img: jsapi,
       repo: 'https://github.com/shihchinghuang/JavaScript-Review-Portfolio/tree/main/public/fetch-filter-user-list',
       pages:
         'https://shihchinghuang.github.io/JavaScript-Review-Portfolio/public/fetch-filter-user-list/index.html',
     },
     {
-      title: '切版 The News Lens 桌機版網站',
+      title: 'UI to HTML The News Lens project',
       img: tnl,
       repo: 'https://github.com/shihchinghuang/HTML-CSS-Bootstrap/tree/main/TheNewsLens',
       pages:
         'https://shihchinghuang.github.io/HTML-CSS-Bootstrap/TheNewsLens/index.html',
     },
     {
-      title: '切版 MEIER.Q 桌機版網站',
+      title: 'UI to HTML  MEIER.Q project',
       img: meierq,
       repo: 'https://github.com/shihchinghuang/HTML-CSS-Bootstrap/tree/main/MEIER.Q',
       pages:
