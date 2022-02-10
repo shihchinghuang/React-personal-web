@@ -58,7 +58,7 @@ const ContactIcons = () => {
         <div data-aos="fade-up" data-aos-delay="200">
           <a
             target="_blank"
-            href="https://www.linkedin.com/in/shihching-huang-4680a68b/"
+            href="https://www.linkedin.com/in/shihching-huang/"
             rel="noreferrer"
           >
             <AiFillLinkedin className="infoicon" />
